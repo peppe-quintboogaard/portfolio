@@ -14,7 +14,32 @@
 
 body {
   background-color: var(--white-color);
+  color: var(--dark-blue-color);
   font-family: var(--body-font);
+  font-size: 15px;
   margin: 0;
   width: 100%;
+}
+
+/* header */
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.header .header-logo {
+  width: 2rem;
+}
+
+.header .header-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  margin-left: 1rem;
+  text-transform: uppercase;
 }
