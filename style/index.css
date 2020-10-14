@@ -3,8 +3,7 @@
   --heading-font: 'Kumbh Sans', sans-serif;
 
   --blue-color: #3f38dd;
-  --red-color: #ff2880;
-  /* #FF122D */
+  --red-color: #ff122d;
   --orange-color: #ffbe48;
   --green-color: #00ba8e;
   --dark-blue-color: #2d294e;
@@ -131,7 +130,7 @@ h6 {
 .container {
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
     ' . intro . '
     ' . work . ';
@@ -189,8 +188,8 @@ h6 {
   background: var(--blue-color);
   color: var(--white-color);
   display: flex;
-  height: 2.5rem;
-  padding: 1.5rem 1.5rem;
+  height: 3.5rem;
+  padding: 0rem 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -205,7 +204,7 @@ h6 {
 }
 
 .work-item {
-  background: red;
+  background: var(--red-color);
   display: flex;
   flex-direction: column;
   height: 15rem;
