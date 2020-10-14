@@ -1,6 +1,11 @@
 :root {
   --body-font: 'Source Sans Pro', serif;
   --heading-font: 'Kumbh Sans', sans-serif;
+
+  --blue-color: #3f38dd;
+  --dark-blue-color: #2d294e;
+  --grey-color: #c4c3cc;
+  --white-color: #f9f9fa;
 }
 
 * {
@@ -8,6 +13,7 @@
 }
 
 body {
+  background-color: var(--white-color);
   font-family: var(--body-font);
   margin: 0;
   width: 100%;
