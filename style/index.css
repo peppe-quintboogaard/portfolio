@@ -61,7 +61,7 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 30;
 }
 
 .header .header-logo {
@@ -133,7 +133,9 @@ h6 {
   /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
     ' . intro . '
-    ' . work . ';
+    ' . work . '
+    ' . skills . '
+    ' . contact . ';
   padding-top: 10vh;
 }
 
@@ -210,6 +212,53 @@ h6 {
   height: 15rem;
   justify-content: flex-end;
   margin: 1.5rem 0;
+  overflow: hidden;
   padding: 1rem;
+  position: relative;
   width: 100%;
+}
+
+.work-item--title,
+.work-item--sub {
+  color: var(--white-color);
+  z-index: 20;
+}
+
+.work-item--title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.work-item--image {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.5);
+  transition: var(--small-transition);
+  width: 100%;
+  z-index: 10;
+}
+
+.work-item:hover .work-item--image {
+  transform: scale(1.75);
+}
+
+/* skills */
+
+.skills {
+  grid-area: skills;
+}
+
+.skills-heading::before {
+  background: var(--green-color);
+}
+
+/* contact */
+
+.contact {
+  grid-area: contact;
+}
+
+.contact-heading::before {
+  background: var(--orange-color);
 }
