@@ -1,5 +1,5 @@
 :root {
-  --body-font: 'Source Serif Pro', serif;
+  --body-font: 'Source Sans Pro', serif;
   --heading-font: 'Kumbh Sans', sans-serif;
 
   --blue-color: #3f38dd;
@@ -37,6 +37,12 @@ button {
   text-transform: uppercase;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* typgraphy */
 
 h1,
@@ -47,6 +53,10 @@ h5,
 h6 {
   font-family: var(--heading-font);
   margin: 0;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 /* header */
@@ -218,6 +228,11 @@ h6 {
   width: 100%;
 }
 
+.work-item:last-child,
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
 .work-item--title,
 .work-item--sub {
   color: var(--white-color);
@@ -251,6 +266,51 @@ h6 {
 
 .skills-heading::before {
   background: var(--green-color);
+}
+
+.skill-item {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.skill-item i {
+  font-size: 3rem;
+}
+
+.skill-item--title {
+  margin: auto;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.skill-item--title::after {
+  background: var(--grey-color);
+  bottom: -0.8rem;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.skill-item--text {
+  line-height: 1.75rem;
+}
+
+.skill-item--list {
+  margin-top: 1.5rem;
+}
+
+.skill-item--point {
+  padding-bottom: 1rem;
+}
+
+.skill-item--point i {
+  color: var(--grey-color);
+  font-size: 1rem;
+  margin-right: 1rem;
 }
 
 /* contact */
