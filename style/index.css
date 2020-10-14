@@ -1,8 +1,14 @@
+:root {
+  --body-font: 'Source Sans Pro', serif;
+  --heading-font: 'Kumbh Sans', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: var(--body-font);
   margin: 0;
   width: 100%;
 }
