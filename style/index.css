@@ -1,5 +1,5 @@
 :root {
-  --body-font: 'Source Sans Pro', serif;
+  --body-font: 'Source Serif Pro', serif;
   --heading-font: 'Kumbh Sans', sans-serif;
 
   --blue-color: #3f38dd;
@@ -19,6 +19,7 @@ body {
   color: var(--dark-blue-color);
   font-family: var(--body-font);
   font-size: 15px;
+  letter-spacing: 1px;
   margin: 0;
   width: 100%;
 }
@@ -27,6 +28,22 @@ body {
 button {
   background: none;
   border: none;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* typgraphy */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  margin: 0;
 }
 
 /* header */
@@ -99,4 +116,53 @@ button {
 
 .header-button.open span:nth-child(3) {
   transform: rotate(-45deg);
+}
+
+/* container */
+
+.container {
+  padding: 0.5rem 1rem;
+}
+
+/* intro */
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro-text::before {
+  background: var(--blue-color);
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.intro-text {
+  font-weight: 400;
+  line-height: 3.5rem;
+  margin: 1.5rem 0 0 0;
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.intro-text span {
+  display: block;
+}
+
+.intro-text span:nth-child(2),
+.intro-text span:nth-child(3) {
+  font-weight: bold;
+}
+
+.intro-trigger {
+  align-items: center;
+  background: var(--blue-color);
+  color: var(--white-color);
+  display: flex;
+  height: 2.5rem;
+  padding: 1.5rem 1.5rem;
+  margin-top: 1.5rem;
 }
