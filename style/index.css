@@ -6,6 +6,8 @@
   --dark-blue-color: #2d294e;
   --grey-color: #c4c3cc;
   --white-color: #f9f9fa;
+
+  --small-transition: 0.2s ease;
 }
 
 * {
@@ -19,6 +21,12 @@ body {
   font-size: 15px;
   margin: 0;
   width: 100%;
+}
+
+/* reset */
+button {
+  background: none;
+  border: none;
 }
 
 /* header */
@@ -42,4 +50,53 @@ body {
   letter-spacing: 2px;
   margin-left: 1rem;
   text-transform: uppercase;
+}
+
+.header-button {
+  cursor: pointer;
+  height: 12px;
+  margin-left: auto;
+  outline: none;
+  position: relative;
+  width: 20px;
+}
+
+.header-button span {
+  background: var(--dark-blue-color);
+  height: 2px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: var(--small-transition);
+  width: 100%;
+}
+
+.header-button span:nth-child(1) {
+  top: 0px;
+}
+
+.header-button span:nth-child(2),
+.header-button span:nth-child(3) {
+  top: 50%;
+}
+
+.header-button span:nth-child(4) {
+  top: 100%;
+}
+
+.header-button.open span:nth-child(1),
+.header-button.open span:nth-child(4) {
+  left: 50%;
+  top: 50%;
+  width: 0%;
+}
+
+.header-button.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header-button.open span:nth-child(3) {
+  transform: rotate(-45deg);
 }
