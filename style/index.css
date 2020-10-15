@@ -71,7 +71,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 30;
+  z-index: 100;
 }
 
 .header .header-logo {
@@ -153,20 +153,34 @@ p {
   margin-bottom: 1rem;
 }
 
-.section-heading::before {
+.section-heading {
+  height: 3rem;
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  z-index: 50;
+}
+
+.section-heading--text {
+  align-items: center;
+  background: var(--white-color);
+  display: flex;
+  height: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.section-heading--text::before {
   content: '';
   display: block;
   height: 3px;
   position: absolute;
-  top: 0;
+  top: 0.25rem;
   width: 40px;
 }
 
-.section-heading {
-  margin-top: 1.5rem;
-  padding-top: 0.75rem;
-  position: relative;
-  text-transform: uppercase;
+.section-heading .fixed {
+  position: fixed;
 }
 
 /* intro */
@@ -182,7 +196,6 @@ p {
 .intro-text {
   font-weight: 400;
   line-height: 3.5rem;
-  margin-top: 1.5rem;
   position: relative;
 }
 
