@@ -340,3 +340,14 @@ p {
 .contact-heading::before {
   background: var(--orange-color);
 }
+
+.contact-social {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 4rem;
+}
+
+.contact-social--media {
+  font-size: 2rem;
+}
