@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style/index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&family=Syne:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&family=Syne:wght@500&display=swap" rel="stylesheet" />
     <title>Peppe-Quint - Motoplat</title>
     <script src="https://kit.fontawesome.com/3bcf5c0f9e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header class="header">
-    <a class="header-hyperlink" href="../index.html">
-      <img class="header-logo" src="./../sources/images/logo-blue.svg" alt="logo">
-       <span class="header-text">peppe-quint</span>
-    </a>
-    <button class="header-button">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-  <main class="container">
-    
-  </main>
-  <script src="./../scripts/index.js"></script>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-hyperlink" href="../index.html">
+        <img class="header-logo" src="./../sources/images/logo-blue.svg" alt="logo" />
+        <span class="header-text">peppe-quint</span>
+      </a>
+      <button class="header-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main class="container project-grid">
+      <section class="intro">
+        <div class="section-heading">
+          <h5 class="section-heading--text project-heading">motoplat cv</h5>
+        </div>
+        <p class="intro-project--caption">Motoplat is a high quality test equipment company, based in the Netherlands. In 2013 it came back on the market with renewed equipment.</p>
+      </section>
+      <section class="screens">
+        <picture class="screens-project">
+          <source media="(max-width:520px)" srcset="./../sources/images/screenshot_motoplat-mobile.png" />
+          <source media="(max-width:980px)" srcset="./../sources/images/screenshot_motoplat-tablet.png" />
+          <source media="(min-width:981px)" srcset="./../sources/images/screenshot_motoplat-desktop.png" />
+          <img src="./../sources/images/screenshot_motoplat-desktop.png" alt="screenshot project of motoplat" />
+        </picture>
+      </section>
+      <section class="info">
+        <h3 class="info-title">what is the case?</h3>
+      </section>
+    </main>
+    <script src="./../scripts/index.js"></script>
+  </body>
 </html>

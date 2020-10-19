@@ -149,14 +149,24 @@ p {
 
 .container {
   display: grid;
+  padding-top: 10vh;
+}
+
+.homepage-grid {
   grid-template-columns: 1rem 1fr 1rem;
-  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
     ' . intro . '
     ' . work . '
     ' . skills . '
     ' . contact . ';
-  padding-top: 10vh;
+}
+
+.project-grid {
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-areas:
+    ' . intro . '
+    ' . screens . '
+    ' . info . ';
 }
 
 .container section {
@@ -355,4 +365,34 @@ p {
 
 .contact-social--media {
   font-size: 2rem;
+}
+
+/* project */
+
+.project-heading::before {
+  background: var(--red-color);
+}
+
+.intro-project--caption {
+  line-height: 2rem;
+  margin-top: 0;
+}
+
+/* screens */
+
+.screens {
+  grid-area: screens;
+  text-align: center;
+}
+
+.screens-project img {
+  width: 80%;
+}
+
+.info {
+  grid-area: info;
+}
+
+.info-title {
+  text-transform: uppercase;
 }
