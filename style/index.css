@@ -165,7 +165,7 @@ p {
   grid-template-columns: 1rem 1fr 1rem;
   grid-template-areas:
     ' . intro . '
-    ' . screens . '
+    ' screens screens screens '
     ' . info . ';
 }
 
@@ -369,24 +369,37 @@ p {
 
 /* project */
 
+.project-grid p {
+  line-height: 2rem;
+}
+
 .project-heading::before {
   background: var(--red-color);
 }
 
 .intro-project--caption {
-  line-height: 2rem;
   margin-top: 0;
 }
 
 /* screens */
 
 .screens {
+  align-items: flex-start;
+  display: flex;
   grid-area: screens;
+  justify-content: flex-start;
+  overflow: scroll;
   text-align: center;
 }
 
-.screens-project img {
-  width: 80%;
+.screens-mobile {
+  margin-right: 2rem;
+  width: 65%;
+}
+
+.screens-motoplat {
+  border: 5px solid #36353a;
+  border-radius: 25px;
 }
 
 .info {
