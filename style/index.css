@@ -66,6 +66,7 @@ h6 {
 }
 
 p {
+  line-height: 1.8rem;
   margin-bottom: 0px;
 }
 
@@ -153,7 +154,9 @@ p {
 
 .project-grid {
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-areas: ' . intro . ';
+  grid-template-areas:
+    ' . intro . '
+    ' . languages . ';
   padding-top: 10vh;
 }
 
@@ -369,4 +372,29 @@ p {
 
 .intro-project--image {
   width: 100%;
+}
+
+.languages {
+  grid-area: languages;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.languages-list--item {
+  text-align: center;
+}
+
+.languages-list--icon {
+  font-size: 2rem;
+}
+
+.languages-list--tooltip {
+  font-family: var(--heading-font);
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
