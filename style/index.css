@@ -149,6 +149,11 @@ p {
 
 .container {
   display: grid;
+}
+
+.project-grid {
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-areas: ' . intro . ';
   padding-top: 10vh;
 }
 
@@ -159,14 +164,7 @@ p {
     ' . work . '
     ' . skills . '
     ' . contact . ';
-}
-
-.project-grid {
-  grid-template-columns: 1rem 1fr 1rem;
-  grid-template-areas:
-    ' . intro . '
-    ' screens screens screens '
-    ' . info . ';
+  padding-top: 10vh;
 }
 
 .container section {
@@ -369,43 +367,6 @@ p {
 
 /* project */
 
-.project-grid p {
-  line-height: 2rem;
-}
-
-.project-heading::before {
-  background: var(--red-color);
-}
-
-.intro-project--caption {
-  margin-top: 0;
-}
-
-/* screens */
-
-.screens {
-  align-items: flex-start;
-  display: flex;
-  grid-area: screens;
-  justify-content: flex-start;
-  overflow: scroll;
-  text-align: center;
-}
-
-.screens-mobile {
-  margin-right: 2rem;
-  width: 65%;
-}
-
-.screens-motoplat {
-  border: 5px solid #36353a;
-  border-radius: 25px;
-}
-
-.info {
-  grid-area: info;
-}
-
-.info-title {
-  text-transform: uppercase;
+.intro-project--image {
+  width: 100%;
 }
