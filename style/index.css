@@ -273,7 +273,7 @@ p {
 .work-item {
   display: flex;
   flex-direction: column;
-  height: 15rem;
+  height: 12.5rem;
   justify-content: flex-end;
   margin: 1.5rem 0;
   overflow: hidden;
