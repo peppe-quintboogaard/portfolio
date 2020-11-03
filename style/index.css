@@ -180,13 +180,13 @@ p {
 
 .navigation {
   display: block;
-  margin-top: -5rem;
+  margin-top: -8rem;
   transition: var(--small-transition);
   width: 100%;
 }
 
 .navigation--open {
-  margin-top: 6rem;
+  margin-top: 4rem;
   transition: var(--small-transition);
 }
 
