@@ -339,8 +339,8 @@ p {
   margin: 1.5rem 0;
 }
 
-.skill-item i {
-  font-size: 3rem;
+.skill-item--icon__medium {
+  width: 3.5rem;
 }
 
 .skill-item--title {
@@ -349,7 +349,7 @@ p {
   text-transform: uppercase;
 }
 
-.skill-item--title::after {
+/* .skill-item--title::after {
   background: var(--grey-color);
   bottom: -0.8rem;
   content: '';
@@ -357,7 +357,7 @@ p {
   height: 1px;
   position: absolute;
   width: 100%;
-}
+} */
 
 .skill-item--text {
   line-height: 1.75rem;
