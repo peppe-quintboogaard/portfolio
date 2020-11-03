@@ -74,6 +74,32 @@ p {
   margin-bottom: 0px;
 }
 
+/* general */
+
+.button {
+  align-items: center;
+  display: flex;
+  height: 3.5rem;
+  padding: 0rem 1.5rem;
+  transition: var(--small-transition);
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translate(0, -2px);
+  transition: var(--small-transition);
+}
+
+.button-blue {
+  border: 3px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.button-red {
+  border: 3px solid var(--red-color);
+  color: var(--red-color);
+}
+
 /* header */
 
 .header {
@@ -234,23 +260,6 @@ p {
   font-weight: bold;
 }
 
-.button {
-  align-items: center;
-  display: flex;
-  height: 3.5rem;
-  padding: 0rem 1.5rem;
-}
-
-.button-blue {
-  border: 3px solid var(--blue-color);
-  color: var(--blue-color);
-}
-
-.button-red {
-  border: 3px solid var(--red-color);
-  color: var(--red-color);
-}
-
 /* work */
 
 .work {
@@ -262,7 +271,6 @@ p {
 }
 
 .work-item {
-  background: var(--red-color);
   display: flex;
   flex-direction: column;
   height: 15rem;
@@ -281,7 +289,12 @@ p {
 .work-item--title,
 .work-item--sub {
   color: var(--white-color);
+  transition: var(--small-transition);
   z-index: 20;
+}
+
+.work-item--sub {
+  margin: 0 0 0.5rem;
 }
 
 .work-item--title {
@@ -293,14 +306,20 @@ p {
   left: 0;
   position: absolute;
   top: 0;
-  transform: scale(1.5);
+  transform: scale(1.25);
   transition: var(--small-transition);
   width: 100%;
   z-index: 10;
 }
 
 .work-item:hover .work-item--image {
-  transform: scale(1.75);
+  transform: scale(1);
+}
+
+.work-item:hover .work-item--title,
+.work-item:hover .work-item--sub {
+  transform: translate(4px, -4px);
+  transition: var(--small-transition);
 }
 
 /* skills */
