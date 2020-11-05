@@ -23,7 +23,8 @@ body {
   font-family: var(--body-font);
   font-size: 15px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 70rem;
   width: 100%;
 }
 
@@ -344,7 +345,7 @@ p {
   flex-direction: column;
   height: 12.5rem;
   justify-content: flex-end;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0;
   overflow: hidden;
   padding: 1rem;
   position: relative;
@@ -391,6 +392,10 @@ p {
   transition: var(--small-transition);
 }
 
+.intro-trigger__link > button {
+  margin-top: 1.5rem;
+}
+
 /* skills */
 
 .skills {
@@ -402,6 +407,7 @@ p {
 }
 
 .skill-item {
+  align-content: flex-start;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -531,4 +537,22 @@ p {
 
 .info-link--github {
   background: var(--dark-blue-color);
+}
+
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+  .work,
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .work-item__link,
+  .skill-item {
+    width: 47.5%;
+  }
 }
