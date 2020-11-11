@@ -513,6 +513,10 @@ p {
   width: 100%;
 }
 
+.intro-images--item:hover {
+  cursor: ew-resize;
+}
+
 .info {
   grid-area: info;
 }
