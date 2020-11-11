@@ -331,6 +331,10 @@ p {
   font-weight: bold;
 }
 
+.intro-text span:last-child {
+  height: 5rem;
+}
+
 /* work */
 
 .work {
