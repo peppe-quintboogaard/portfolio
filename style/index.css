@@ -252,6 +252,7 @@ p {
 
 .container {
   display: grid;
+  margin-top: 10vh;
 }
 
 .project-grid {
@@ -443,6 +444,8 @@ p {
 }
 
 .skill-item--point {
+  align-items: center;
+  display: flex;
   padding-bottom: 1rem;
 }
 
@@ -475,53 +478,66 @@ p {
 
 /* project */
 
-.intro-project--image {
-  width: 100%;
+.intro-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.intro-project--name {
+.intro-information p {
+  margin: 0.25rem 0 1rem;
+}
+
+.intro-information--title {
+  font-size: 1.5rem;
   font-weight: 400;
+  margin: 1.5rem 0 1.5rem;
+}
+
+.intro-images--item {
+  width: 100%;
 }
 
 .info {
   grid-area: info;
 }
 
-.languages-list {
+.intro-languages {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 2rem;
   width: 100%;
 }
 
-.languages-list--item {
+.intro-languages--item {
   text-align: center;
   width: 25%;
 }
 
-.languages-list--item:nth-child(-n + 3) {
+.intro-languages--item:nth-child(-n + 3) {
   margin-bottom: 1rem;
 }
 
-.languages-list--icon {
+.intro-languages--icon {
   font-size: 2rem;
 }
 
-.languages-list--tooltip {
+.intro-languages--tooltip {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.info-buttons {
+.intro-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 0rem;
   width: 100%;
 }
 
-.info-link--button {
+.intro-links--button {
   align-items: center;
   color: var(--white-color);
   display: flex;
@@ -531,11 +547,11 @@ p {
   justify-content: center;
 }
 
-.info-link--demo {
+.intro-links--demo {
   background: var(--green-color);
 }
 
-.info-link--github {
+.intro-links--github {
   background: var(--dark-blue-color);
 }
 
@@ -554,5 +570,29 @@ p {
   .work-item__link,
   .skill-item {
     width: 47.5%;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .intro-images {
+    width: 60%;
+  }
+
+  .intro-information {
+    padding-left: 4rem;
+    width: 40%;
+  }
+
+  .intro-information--title {
+    margin: 0 0 1.5rem;
+  }
+
+  .intro-links {
+    margin-top: 2rem;
   }
 }
