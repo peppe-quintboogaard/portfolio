@@ -615,3 +615,92 @@ p {
     margin-top: 2rem;
   }
 }
+
+/* resume */
+
+.resume-grid {
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-areas:
+    " . intro . "
+    " . biography . "
+    " . experience . "
+    " . education . "
+    " . ability . ";
+}
+
+.personal-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-list--item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+
+.personal-list--item:last-child {
+  margin-bottom: 0;
+}
+
+.personal-list--item p {
+  margin: 0;
+  margin-left: auto;
+  /* padding-left: 1rem; */
+}
+
+.biography {
+  grid-area: biography;
+}
+
+.biography-text {
+  max-width: 30rem;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.experience-item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.experience-left {
+  min-width: 15rem;
+}
+
+.experience-right p {
+  /* margin-top: 0; */
+  max-width: 35rem;
+}
+
+.education {
+  grid-area: education;
+}
+
+.ability {
+  grid-area: ability;
+  padding-bottom: 5rem;
+}
+
+.ability-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.ability-item {
+  font-size: 5rem;
+}
+
+.ability-item svg {
+  width: 5rem;
+}
