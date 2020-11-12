@@ -333,6 +333,12 @@ p {
 
 .intro-text span:last-child {
   height: 5rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+
+.typewrite:hover {
+  cursor: none;
 }
 
 /* work */
@@ -500,7 +506,7 @@ p {
 
 .intro-images {
   display: flex;
-  height: 100%;
+  height: 12rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
@@ -576,48 +582,6 @@ p {
 
 .intro-links--github {
   background: var(--dark-blue-color);
-}
-
-/* media queries */
-
-@media only screen and (min-width: 768px) {
-  .work,
-  .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .work-item__link,
-  .skill-item {
-    width: 47.5%;
-  }
-
-  .intro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .intro-images {
-    width: 60%;
-  }
-
-  .intro-information {
-    padding-left: 4rem;
-    width: 40%;
-  }
-
-  .intro-information--title {
-    margin: 0 0 1.5rem;
-  }
-
-  .intro-links {
-    margin-top: 2rem;
-  }
 }
 
 /* resume */
@@ -707,4 +671,53 @@ p {
 
 .ability-item svg {
   width: 5rem;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+  .work,
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .work-item__link,
+  .skill-item {
+    width: 47.5%;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .intro-text span:last-child {
+    height: 5rem;
+    line-height: 5rem;
+    margin-top: 0;
+  }
+
+  .intro-images {
+    height: 100%;
+    width: 60%;
+  }
+
+  .intro-information {
+    padding-left: 4rem;
+    width: 40%;
+  }
+
+  .intro-information--title {
+    margin: 0 0 1.5rem;
+  }
+
+  .intro-links {
+    margin-top: 2rem;
+  }
 }
