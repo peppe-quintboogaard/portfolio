@@ -520,6 +520,7 @@ p {
 .intro-images--item {
   flex-shrink: 0;
   scroll-snap-align: start;
+  height: 100%;
   width: 100%;
 }
 
