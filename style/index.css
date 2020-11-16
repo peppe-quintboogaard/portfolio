@@ -338,7 +338,7 @@ p {
 }
 
 .typewrite:hover {
-  cursor: none;
+  cursor: text;
 }
 
 /* work */
@@ -426,6 +426,7 @@ p {
 }
 
 .skill-item--icon__medium {
+  font-size: 3.5rem;
   width: 3.5rem;
 }
 
@@ -585,6 +586,16 @@ p {
   background: var(--dark-blue-color);
 }
 
+.info-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-article--text {
+  width: 100%;
+}
+
 /* resume */
 
 .resume-grid {
@@ -597,9 +608,15 @@ p {
     " . ability . ";
 }
 
+.personal-photo {
+  margin-right: auto;
+  width: 25%;
+}
+
 .personal-list {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
 }
 
 .personal-list--item {
@@ -624,8 +641,31 @@ p {
   grid-area: biography;
 }
 
+.personal > article,
+.biography > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .biography-text {
   max-width: 30rem;
+  width: 50%;
+}
+
+.biography-hobby {
+  list-style: circle;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.hobby-item {
+  padding-bottom: 1rem;
+}
+
+.biography-link {
+  font-weight: bold;
 }
 
 .experience {
@@ -718,7 +758,12 @@ p {
     margin: 0 0 1.5rem;
   }
 
-  .intro-links {
-    margin-top: 2rem;
+  .info-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-article--text {
+    width: 48%;
   }
 }
