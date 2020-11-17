@@ -627,11 +627,13 @@ p {
 .personal {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .personal-photo {
   align-self: center;
   height: 50%;
+  max-width: 20rem;
   width: 50%;
 }
 
@@ -639,6 +641,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .personal-list--item {
@@ -646,7 +649,7 @@ p {
   display: flex;
   flex-direction: row;
   margin-bottom: 1rem;
-  width: 100%
+  width: 100%;
 }
 
 .personal-list--item:last-child {
@@ -670,7 +673,8 @@ p {
   justify-content: space-between;
 } */
 
-.biography-text { 
+.biography-text {
+  max-width: 30rem;
   width: 100%;
 }
 
@@ -704,17 +708,13 @@ p {
 
 .experience-left p {
   margin-top: 0;
-  /* min-width: 15rem; */
 }
 
 .experience-right {
   margin-top: 1.5rem;
 }
 
-.experience-right p {
-  /* margin-top: 0; */
-  /* max-width: 35rem; */
-}
+
 
 .education {
   grid-area: education;
@@ -744,6 +744,42 @@ p {
 }
 
 /* media queries */
+
+@media only screen and (min-width: 600px) {
+  .personal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .personal-list {
+    max-width: 20rem;
+    width: 45%;
+  }
+
+  .personal-photo {
+    order: 2;
+  }
+
+  .experience-item {
+    flex-direction: row;
+  }
+
+  .experience-right {
+    margin-top: 0;
+  }
+  
+  .experience-left p {
+      min-width: 15rem;
+  }
+  
+  .experience-right p {
+    max-width: 35rem;
+  }
+
+  .ability-item {
+    width: 25%;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .work,
@@ -804,7 +840,6 @@ p {
     margin-top: 0;
     width: 48%;
   }
-
 
   .project-intro {
     justify-content: space-between;
