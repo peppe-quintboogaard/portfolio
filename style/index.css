@@ -624,16 +624,21 @@ p {
     " . ability . ";
 }
 
+.personal {
+  display: flex;
+  flex-direction: column;
+}
+
 .personal-photo {
-  margin-right: auto;
-  height: 25%;
-  width: 25%;
+  align-self: center;
+  height: 50%;
+  width: 50%;
 }
 
 .personal-list {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
+  margin-top: 1.5rem;
 }
 
 .personal-list--item {
@@ -641,7 +646,7 @@ p {
   display: flex;
   flex-direction: row;
   margin-bottom: 1rem;
-  width: 20rem;
+  width: 100%
 }
 
 .personal-list--item:last-child {
@@ -658,19 +663,19 @@ p {
   grid-area: biography;
 }
 
-.personal > article,
+/* .personal > article,
 .biography > article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
-.biography-text {
-  max-width: 30rem;
-  width: 50%;
+.biography-text { 
+  width: 100%;
 }
 
 .biography-hobby {
+  display: none;
   list-style: circle;
   margin-top: 1rem;
   padding-left: 2rem;
@@ -692,18 +697,23 @@ p {
 .experience-item {
   align-items: flex-start;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-.experience-left {
-  min-width: 15rem;
+.experience-left p {
+  margin-top: 0;
+  /* min-width: 15rem; */
+}
+
+.experience-right {
+  margin-top: 1.5rem;
 }
 
 .experience-right p {
   /* margin-top: 0; */
-  max-width: 35rem;
+  /* max-width: 35rem; */
 }
 
 .education {
@@ -712,19 +722,21 @@ p {
 
 .ability {
   grid-area: ability;
-  padding-bottom: 5rem;
 }
 
 .ability-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
 }
 
 .ability-item {
   font-size: 5rem;
+  text-align: center;
+  width: 50%;
 }
 
 .ability-item svg {
