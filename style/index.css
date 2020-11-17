@@ -594,8 +594,11 @@ p {
 }
 
 .info-article--text {
-  margin-top: 0;
   width: 100%;
+}
+
+.info-article--text:first-child {
+  margin-top: 0;
 }
 
 .image-caption {
@@ -785,8 +788,10 @@ p {
   }
 
   .info-article--text {
+    margin-top: 0;
     width: 48%;
   }
+
 
   .project-intro {
     justify-content: space-between;
