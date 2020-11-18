@@ -15,48 +15,72 @@
         <img class="header-logo" src="./../../sources/images/logo-blue.svg" alt="logo" />
         <span class="header-text">peppe-quint</span>
       </a>
+      <a class="header-return" href="./../../index.html">
+        <p class="header-return--text">go back</p>
+        <div class="header-cross">
+          <span class="header-cross--line"></span>
+          <span class="header-cross--line"></span>
+        </div>
+      </a>
     </header>
     <main class="container project-grid">
-      <section class="intro">
+      <section class="intro project-intro">
         <div class="section-heading">
-          <h5 class="section-heading--text work-heading">Concept</h5>
+          <h5 class="section-heading--text work-heading">musicbase</h5>
         </div>
-        <img class="intro-project--image" src="./../../sources/images/screenshot-musicbase-project.png" alt="screenshot website" />
-        <h1 class="intro-project--name">Musicbase</h1>
-        <p class="intro-project--description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id purus viverra, tristique neque eu, laoreet ligula. Maecenas at iaculis velit, vitae vestibulum velit. Suspendisse potenti.
-        </p>
+        <article class="intro-images">
+          <img class="intro-images--item" src="./../../sources/images/screenshot-musicbase-1.png" alt="screenshot repertoire website" />
+        </article>
+        <article class="intro-information">
+          <h1 class="intro-information--title">Web application</h1>
+          <h3 class="intro-information--subtitle">Role</h3>
+          <p class="intro-information--text">Frontend Developer</p>
+          <h3 class="intro-information--subtitle">Published</h3>
+          <p class="intro-information--text">January 2019</p>
+          <h3 class="intro-information--subtitle">Stack</h3>
+          <ul class="intro-languages">
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-html5-plain colored"></i>
+              <p class="intro-languages--tooltip">html5</p>
+            </li>
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-css3-plain colored"></i>
+              <p class="intro-languages--tooltip">css3</p>
+            </li>
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-javascript-plain colored"></i>
+              <p class="intro-languages--tooltip">javascript</p>
+            </li>
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-nodejs-plain colored"></i>
+              <p class="intro-languages--tooltip">node js</p>
+            </li>
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-express-original colored"></i>
+              <p class="intro-languages--tooltip">express</p>
+            </li>
+            <li class="intro-languages--item">
+              <i class="intro-languages--icon devicon-mongodb-plain colored"></i>
+              <p class="intro-languages--tooltip">mongodb</p>
+            </li>
+          </ul>
+        </article>
+        <article class="intro-links">
+          <a href="https://github.com/peppequint/musicbase" class="info-link" target="_blank"><button class="button intro-links--button intro-links--github">github</button></a>
+        </article>
       </section>
       <section class="info">
-        <ul class="languages-list">
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-html5-plain colored"></i>
-            <p class="languages-list--tooltip">html5</p>
-          </li>
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-css3-plain colored"></i>
-            <p class="languages-list--tooltip">css3</p>
-          </li>
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-javascript-plain colored"></i>
-            <p class="languages-list--tooltip">javascript</p>
-          </li>
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-nodejs-plain colored"></i>
-            <p class="languages-list--tooltip">nodejs</p>
-          </li>
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-express-original colored"></i>
-            <p class="languages-list--tooltip">express</p>
-          </li>
-          <li class="languages-list--item">
-            <i class="languages-list--icon devicon-mongodb-plain colored"></i>
-            <p class="languages-list--tooltip">mongodb</p>
-          </li>
-        </ul>
-        <article class="info-buttons">
-          <a href="" class="info-link"><button class="info-link--button info-link--demo">demo</button></a>
-          <a href="" class="info-link"><button class="info-link--button info-link--github">github</button></a>
+        <!-- <h2 class="info-title">Detailed description</h2> -->
+        <article class="info-article">
+          <p class="info-article--text">
+            This is a concept that I have in my head for several months and that I work on from time to time. I am a big fan of music, especially house music. I often search the internet to find songs
+            and usually these songs have not been released. This application is a personal database where you can store these tracks with the corresponding source and release date. When the date is
+            that the song will be released, the user will be notified.
+          </p>
+          <p class="info-article--text">
+            It is a server side built application that runs on Node.js and Express. A MongoDb database is linked where all data is stored. In the future I want to expand the concept, where users can
+            share their data among themselves, making it a kind of music platform.
+          </p>
         </article>
       </section>
     </main>
