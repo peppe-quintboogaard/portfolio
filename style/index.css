@@ -112,6 +112,7 @@ p {
   padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
+  max-width: 70rem;
   width: 100%;
   z-index: 100;
 }
@@ -128,16 +129,21 @@ p {
   text-transform: uppercase;
 }
 
-.header-button {
+.header-return {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-cross {
   cursor: pointer;
-  height: 12px;
   margin-left: auto;
   outline: none;
   position: relative;
   width: 20px;
 }
 
-.header-button span {
+.header-cross--line {
   background: var(--dark-blue-color);
   height: 2px;
   left: 0;
@@ -149,32 +155,17 @@ p {
   width: 100%;
 }
 
-.header-button span:nth-child(1) {
-  top: 0px;
-}
-
-.header-button span:nth-child(2),
-.header-button span:nth-child(3) {
-  top: 50%;
-}
-
-.header-button span:nth-child(4) {
-  top: 100%;
-}
-
-.header-button.open span:nth-child(1),
-.header-button.open span:nth-child(4) {
-  left: 50%;
-  top: 50%;
-  width: 0%;
-}
-
-.header-button.open span:nth-child(2) {
+.header-cross--line:nth-child(1) {
   transform: rotate(45deg);
 }
 
-.header-button.open span:nth-child(3) {
+.header-cross--line:nth-child(2) {
   transform: rotate(-45deg);
+}
+
+.header-return--text {
+  opacity: 0;
+  margin: 0;
 }
 
 /* navigation */
@@ -714,8 +705,6 @@ p {
   margin-top: 1.5rem;
 }
 
-
-
 .education {
   grid-area: education;
 }
@@ -767,11 +756,11 @@ p {
   .experience-right {
     margin-top: 0;
   }
-  
+
   .experience-left p {
-      min-width: 15rem;
+    min-width: 15rem;
   }
-  
+
   .experience-right p {
     max-width: 35rem;
   }
@@ -782,6 +771,22 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .header-return {
+    margin-left: auto;
+  }
+
+  .header-return:hover .header-cross .header-cross--line {
+    transform: rotate(0deg);
+  }
+  
+  .header-return--text {
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    padding-right: 1rem;
+  }
+  
   .work,
   .skills {
     display: flex;
