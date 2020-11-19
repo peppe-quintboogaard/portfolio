@@ -651,10 +651,15 @@ p {
   margin-bottom: 0;
 }
 
-.personal-list--item p {
+.personal-list--item p,
+.personal-list--item a {
   margin: 0;
   margin-left: auto;
   /* padding-left: 1rem; */
+}
+
+.personal-list--item a:hover {
+  cursor: pointer;
 }
 
 .biography {
