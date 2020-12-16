@@ -500,6 +500,7 @@ p {
   position: relative;
   display: flex;
   height: 100%;
+  max-height: 18rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
